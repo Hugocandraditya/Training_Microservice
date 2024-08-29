@@ -1,0 +1,899 @@
+2024-08-29T14:08:58.615+07:00  INFO 5680 --- [main] c.e.book_store.BookStoreApplication      : Starting BookStoreApplication using Java 17.0.6 with PID 5680 (C:\Users\Hugo Candraditya\Documents\Training MicroService\Springboot\book_store_with_logging\book_store\target\classes started by Hugo Candraditya in C:\Users\Hugo Candraditya\Documents\Training MicroService\Springboot\book_store_with_logging\book_store)
+2024-08-29T14:08:58.619+07:00  INFO 5680 --- [main] c.e.book_store.BookStoreApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T14:08:59.281+07:00  INFO 5680 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T14:08:59.341+07:00  INFO 5680 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interface.
+2024-08-29T14:08:59.899+07:00  INFO 5680 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-29T14:08:59.916+07:00  INFO 5680 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-29T14:08:59.917+07:00  INFO 5680 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-29T14:09:00.002+07:00  INFO 5680 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-29T14:09:00.003+07:00  INFO 5680 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1332 ms
+2024-08-29T14:09:00.038+07:00  INFO 5680 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-29T14:09:00.226+07:00  INFO 5680 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-29T14:09:00.228+07:00  INFO 5680 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-29T14:09:00.237+07:00  INFO 5680 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-29T14:09:00.436+07:00  INFO 5680 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T14:09:00.567+07:00  INFO 5680 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29T14:09:00.622+07:00  INFO 5680 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T14:09:00.899+07:00  INFO 5680 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T14:09:01.520+07:00  INFO 5680 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-29T14:09:01.536+07:00  INFO 5680 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T14:09:01.772+07:00  WARN 5680 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-29T14:09:01.857+07:00 DEBUG 5680 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2024-08-29T14:09:01.932+07:00 DEBUG 5680 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-29T14:09:01.975+07:00 DEBUG 5680 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-29T14:09:02.023+07:00 DEBUG 5680 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-29T14:09:02.170+07:00  INFO 5680 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-29T14:09:02.186+07:00  INFO 5680 --- [main] c.e.book_store.BookStoreApplication      : Started BookStoreApplication in 3.969 seconds (process running for 4.336)
+2024-08-29T14:09:26.704+07:00  INFO 5680 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-29T14:09:26.704+07:00  INFO 5680 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-29T14:09:26.704+07:00 DEBUG 5680 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-08-29T14:09:26.704+07:00 DEBUG 5680 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-08-29T14:09:26.704+07:00 DEBUG 5680 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-08-29T14:09:26.705+07:00 DEBUG 5680 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@797ee1a9
+2024-08-29T14:09:26.705+07:00 DEBUG 5680 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@3a44993c
+2024-08-29T14:09:26.705+07:00 DEBUG 5680 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-08-29T14:09:26.705+07:00  INFO 5680 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-29T14:09:26.712+07:00 DEBUG 5680 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/buku", parameters={}
+2024-08-29T14:09:26.717+07:00 DEBUG 5680 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-08-29T14:09:26.722+07:00 DEBUG 5680 --- [http-nio-8080-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-08-29T14:09:26.726+07:00 DEBUG 5680 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource buku.]
+2024-08-29T14:09:26.726+07:00 DEBUG 5680 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-08-29T14:09:26.731+07:00 DEBUG 5680 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2024-08-29T14:09:26.731+07:00 DEBUG 5680 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-08-29T14:09:26.751+07:00 DEBUG 5680 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-29T14:09:26.751+07:00 DEBUG 5680 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 29 14:09:26 WIB 2024, status=404, error=Not Found, path=/buku}]
+2024-08-29T14:09:26.774+07:00 DEBUG 5680 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-08-29T14:09:41.799+07:00 DEBUG 5680 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/buku", parameters={}
+2024-08-29T14:09:41.800+07:00 DEBUG 5680 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.book_store.controller.BookController#createBook(BookModel)
+2024-08-29T14:09:41.826+07:00 DEBUG 5680 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [BookModel(id=null, judul=null, penulis=null, tahunTerbit=null)]
+2024-08-29T14:09:41.832+07:00 DEBUG 5680 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/octet-stream', given [*/*] and supported [*/*]
+2024-08-29T14:09:41.832+07:00 DEBUG 5680 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2024-08-29T14:09:51.460+07:00 DEBUG 5680 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/buku", parameters={}
+2024-08-29T14:09:51.461+07:00 DEBUG 5680 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.book_store.controller.BookController#getBook()
+2024-08-29T14:09:51.558+07:00 DEBUG 5680 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-29T14:09:51.558+07:00 DEBUG 5680 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[]]
+2024-08-29T14:09:51.559+07:00 DEBUG 5680 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-29T14:10:47.793+07:00 DEBUG 5680 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/buku/1", parameters={}
+2024-08-29T14:10:47.795+07:00 DEBUG 5680 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.book_store.controller.BookController#getBook(Long)
+2024-08-29T14:10:47.810+07:00 DEBUG 5680 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/octet-stream', given [*/*] and supported [*/*]
+2024-08-29T14:10:47.810+07:00 DEBUG 5680 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-08-29T14:13:08.767+07:00  INFO 5680 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T14:13:08.770+07:00  INFO 5680 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-29T14:13:08.772+07:00  INFO 5680 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-29T14:13:12.654+07:00  INFO 5264 --- [main] c.e.book_store.BookStoreApplication      : Starting BookStoreApplication using Java 17.0.6 with PID 5264 (C:\Users\Hugo Candraditya\Documents\Training MicroService\Springboot\book_store_with_logging\book_store\target\classes started by Hugo Candraditya in C:\Users\Hugo Candraditya\Documents\Training MicroService\Springboot\book_store_with_logging\book_store)
+2024-08-29T14:13:12.661+07:00  INFO 5264 --- [main] c.e.book_store.BookStoreApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T14:13:13.252+07:00  INFO 5264 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T14:13:13.319+07:00  INFO 5264 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interface.
+2024-08-29T14:13:13.809+07:00  INFO 5264 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-29T14:13:13.819+07:00  INFO 5264 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-29T14:13:13.819+07:00  INFO 5264 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-29T14:13:13.882+07:00  INFO 5264 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-29T14:13:13.883+07:00  INFO 5264 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1189 ms
+2024-08-29T14:13:13.915+07:00  INFO 5264 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-29T14:13:14.115+07:00  INFO 5264 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-29T14:13:14.116+07:00  INFO 5264 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-29T14:13:14.123+07:00  INFO 5264 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-29T14:13:14.291+07:00  INFO 5264 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T14:13:14.371+07:00  INFO 5264 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29T14:13:14.420+07:00  INFO 5264 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T14:13:14.677+07:00  INFO 5264 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T14:13:15.346+07:00  INFO 5264 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-29T14:13:15.364+07:00  INFO 5264 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T14:13:15.625+07:00  WARN 5264 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-29T14:13:15.736+07:00 DEBUG 5264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2024-08-29T14:13:15.873+07:00 DEBUG 5264 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-29T14:13:15.955+07:00 DEBUG 5264 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-29T14:13:16.011+07:00 DEBUG 5264 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-29T14:13:16.211+07:00  INFO 5264 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-29T14:13:16.223+07:00  INFO 5264 --- [main] c.e.book_store.BookStoreApplication      : Started BookStoreApplication in 3.927 seconds (process running for 4.229)
+2024-08-29T14:13:17.325+07:00  INFO 5264 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-29T14:13:17.325+07:00  INFO 5264 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-29T14:13:17.325+07:00 DEBUG 5264 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-08-29T14:13:17.325+07:00 DEBUG 5264 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-08-29T14:13:17.325+07:00 DEBUG 5264 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-08-29T14:13:17.326+07:00 DEBUG 5264 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6a6a3fc4
+2024-08-29T14:13:17.326+07:00 DEBUG 5264 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@11cdf948
+2024-08-29T14:13:17.326+07:00 DEBUG 5264 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-08-29T14:13:17.327+07:00  INFO 5264 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-29T14:13:17.333+07:00 DEBUG 5264 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/buku", parameters={}
+2024-08-29T14:13:17.341+07:00 DEBUG 5264 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.book_store.controller.BookController#getBook(HttpRequestHandler)
+2024-08-29T14:13:17.361+07:00 DEBUG 5264 --- [http-nio-8080-exec-3] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public org.springframework.http.ResponseEntity com.example.book_store.controller.BookController.getBook(org.springframework.web.HttpRequestHandler): No primary or single unique constructor found for interface org.springframework.web.HttpRequestHandler
+2024-08-29T14:13:17.364+07:00 DEBUG 5264 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Failed to complete request: java.lang.IllegalStateException: No primary or single unique constructor found for interface org.springframework.web.HttpRequestHandler
+2024-08-29T14:13:17.364+07:00 ERROR 5264 --- [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: No primary or single unique constructor found for interface org.springframework.web.HttpRequestHandler] with root cause
+
+java.lang.IllegalStateException: No primary or single unique constructor found for interface org.springframework.web.HttpRequestHandler
+	at org.springframework.beans.BeanUtils.getResolvableConstructor(BeanUtils.java:265) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.validation.DataBinder.createObject(DataBinder.java:924) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.validation.DataBinder.construct(DataBinder.java:903) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.web.bind.ServletRequestDataBinder.construct(ServletRequestDataBinder.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletModelAttributeMethodProcessor.constructAttribute(ServletModelAttributeMethodProcessor.java:157) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:148) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:178) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2024-08-29T14:13:17.370+07:00 DEBUG 5264 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-08-29T14:13:17.372+07:00 DEBUG 5264 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-08-29T14:13:17.384+07:00 DEBUG 5264 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-29T14:13:17.385+07:00 DEBUG 5264 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 29 14:13:17 WIB 2024, status=500, error=Internal Server Error, path=/api/buku}]
+2024-08-29T14:13:17.409+07:00 DEBUG 5264 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2024-08-29T14:13:19.636+07:00 DEBUG 5264 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/buku", parameters={}
+2024-08-29T14:13:19.637+07:00 DEBUG 5264 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.book_store.controller.BookController#getBook(HttpRequestHandler)
+2024-08-29T14:13:19.637+07:00 DEBUG 5264 --- [http-nio-8080-exec-2] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public org.springframework.http.ResponseEntity com.example.book_store.controller.BookController.getBook(org.springframework.web.HttpRequestHandler): No primary or single unique constructor found for interface org.springframework.web.HttpRequestHandler
+2024-08-29T14:13:19.637+07:00 DEBUG 5264 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Failed to complete request: java.lang.IllegalStateException: No primary or single unique constructor found for interface org.springframework.web.HttpRequestHandler
+2024-08-29T14:13:19.637+07:00 ERROR 5264 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: No primary or single unique constructor found for interface org.springframework.web.HttpRequestHandler] with root cause
+
+java.lang.IllegalStateException: No primary or single unique constructor found for interface org.springframework.web.HttpRequestHandler
+	at org.springframework.beans.BeanUtils.getResolvableConstructor(BeanUtils.java:265) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.validation.DataBinder.createObject(DataBinder.java:924) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.validation.DataBinder.construct(DataBinder.java:903) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.web.bind.ServletRequestDataBinder.construct(ServletRequestDataBinder.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletModelAttributeMethodProcessor.constructAttribute(ServletModelAttributeMethodProcessor.java:157) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:148) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:178) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2024-08-29T14:13:19.639+07:00 DEBUG 5264 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-08-29T14:13:19.640+07:00 DEBUG 5264 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-08-29T14:13:19.640+07:00 DEBUG 5264 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-29T14:13:19.641+07:00 DEBUG 5264 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 29 14:13:19 WIB 2024, status=500, error=Internal Server Error, path=/api/buku}]
+2024-08-29T14:13:19.642+07:00 DEBUG 5264 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2024-08-29T14:14:14.677+07:00  INFO 5264 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T14:14:14.679+07:00  INFO 5264 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-29T14:14:14.681+07:00  INFO 5264 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-29T14:14:17.781+07:00  INFO 29620 --- [main] c.e.book_store.BookStoreApplication      : Starting BookStoreApplication using Java 17.0.6 with PID 29620 (C:\Users\Hugo Candraditya\Documents\Training MicroService\Springboot\book_store_with_logging\book_store\target\classes started by Hugo Candraditya in C:\Users\Hugo Candraditya\Documents\Training MicroService\Springboot\book_store_with_logging\book_store)
+2024-08-29T14:14:17.785+07:00  INFO 29620 --- [main] c.e.book_store.BookStoreApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T14:14:18.388+07:00  INFO 29620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T14:14:18.450+07:00  INFO 29620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interface.
+2024-08-29T14:14:19.051+07:00  INFO 29620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-29T14:14:19.066+07:00  INFO 29620 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-29T14:14:19.066+07:00  INFO 29620 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-29T14:14:19.163+07:00  INFO 29620 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-29T14:14:19.164+07:00  INFO 29620 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1335 ms
+2024-08-29T14:14:19.208+07:00  INFO 29620 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-29T14:14:19.391+07:00  INFO 29620 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-29T14:14:19.394+07:00  INFO 29620 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-29T14:14:19.406+07:00  INFO 29620 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-29T14:14:19.658+07:00  INFO 29620 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T14:14:19.764+07:00  INFO 29620 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29T14:14:19.799+07:00  INFO 29620 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T14:14:20.056+07:00  INFO 29620 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T14:14:20.687+07:00  INFO 29620 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-29T14:14:20.706+07:00  INFO 29620 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T14:14:20.947+07:00  WARN 29620 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-29T14:14:21.025+07:00 DEBUG 29620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2024-08-29T14:14:21.135+07:00 DEBUG 29620 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-29T14:14:21.196+07:00 DEBUG 29620 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-29T14:14:21.243+07:00 DEBUG 29620 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-29T14:14:21.435+07:00  INFO 29620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-29T14:14:21.445+07:00  INFO 29620 --- [main] c.e.book_store.BookStoreApplication      : Started BookStoreApplication in 4.024 seconds (process running for 4.326)
+2024-08-29T14:14:24.692+07:00  INFO 29620 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-29T14:14:24.693+07:00  INFO 29620 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-29T14:14:24.693+07:00 DEBUG 29620 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-08-29T14:14:24.693+07:00 DEBUG 29620 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-08-29T14:14:24.693+07:00 DEBUG 29620 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-08-29T14:14:24.694+07:00 DEBUG 29620 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5ec06e97
+2024-08-29T14:14:24.694+07:00 DEBUG 29620 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@6c2e7591
+2024-08-29T14:14:24.694+07:00 DEBUG 29620 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-08-29T14:14:24.694+07:00  INFO 29620 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-29T14:14:24.706+07:00 DEBUG 29620 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/buku", parameters={}
+2024-08-29T14:14:24.715+07:00 DEBUG 29620 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.book_store.controller.BookController#getBook(HttpRequest)
+2024-08-29T14:14:24.741+07:00 DEBUG 29620 --- [http-nio-8080-exec-2] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public org.springframework.http.ResponseEntity com.example.book_store.controller.BookController.getBook(org.springframework.http.HttpRequest): No primary or single unique constructor found for interface org.springframework.http.HttpRequest
+2024-08-29T14:14:24.743+07:00 DEBUG 29620 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Failed to complete request: java.lang.IllegalStateException: No primary or single unique constructor found for interface org.springframework.http.HttpRequest
+2024-08-29T14:14:24.744+07:00 ERROR 29620 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: No primary or single unique constructor found for interface org.springframework.http.HttpRequest] with root cause
+
+java.lang.IllegalStateException: No primary or single unique constructor found for interface org.springframework.http.HttpRequest
+	at org.springframework.beans.BeanUtils.getResolvableConstructor(BeanUtils.java:265) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.validation.DataBinder.createObject(DataBinder.java:924) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.validation.DataBinder.construct(DataBinder.java:903) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.web.bind.ServletRequestDataBinder.construct(ServletRequestDataBinder.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletModelAttributeMethodProcessor.constructAttribute(ServletModelAttributeMethodProcessor.java:157) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:148) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:178) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2024-08-29T14:14:24.751+07:00 DEBUG 29620 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-08-29T14:14:24.753+07:00 DEBUG 29620 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-08-29T14:14:24.766+07:00 DEBUG 29620 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-29T14:14:24.767+07:00 DEBUG 29620 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 29 14:14:24 WIB 2024, status=500, error=Internal Server Error, path=/api/buku}]
+2024-08-29T14:14:24.792+07:00 DEBUG 29620 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2024-08-29T14:18:22.091+07:00  INFO 29620 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T14:18:22.094+07:00  INFO 29620 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-29T14:18:22.096+07:00  INFO 29620 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-29T14:18:29.358+07:00  INFO 27676 --- [main] c.e.book_store.BookStoreApplication      : Starting BookStoreApplication using Java 17.0.6 with PID 27676 (C:\Users\Hugo Candraditya\Documents\Training MicroService\Springboot\book_store_with_logging\book_store\target\classes started by Hugo Candraditya in C:\Users\Hugo Candraditya\Documents\Training MicroService\Springboot\book_store_with_logging\book_store)
+2024-08-29T14:18:29.363+07:00  INFO 27676 --- [main] c.e.book_store.BookStoreApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T14:18:29.962+07:00  INFO 27676 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T14:18:30.020+07:00  INFO 27676 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interface.
+2024-08-29T14:18:30.668+07:00  INFO 27676 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-29T14:18:30.683+07:00  INFO 27676 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-29T14:18:30.683+07:00  INFO 27676 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-29T14:18:30.742+07:00  INFO 27676 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-29T14:18:30.743+07:00  INFO 27676 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1333 ms
+2024-08-29T14:18:30.774+07:00  INFO 27676 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-29T14:18:30.989+07:00  INFO 27676 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-29T14:18:30.991+07:00  INFO 27676 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-29T14:18:31.000+07:00  INFO 27676 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-29T14:18:31.268+07:00  INFO 27676 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T14:18:31.330+07:00  INFO 27676 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29T14:18:31.374+07:00  INFO 27676 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T14:18:31.647+07:00  INFO 27676 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T14:18:32.266+07:00  INFO 27676 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-29T14:18:32.287+07:00  INFO 27676 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T14:18:32.471+07:00  WARN 27676 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-29T14:18:32.574+07:00 DEBUG 27676 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2024-08-29T14:18:32.694+07:00 DEBUG 27676 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-29T14:18:32.748+07:00 DEBUG 27676 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-29T14:18:32.816+07:00 DEBUG 27676 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-29T14:18:33.027+07:00  INFO 27676 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-29T14:18:33.039+07:00  INFO 27676 --- [main] c.e.book_store.BookStoreApplication      : Started BookStoreApplication in 4.048 seconds (process running for 4.349)
+2024-08-29T14:20:21.399+07:00  INFO 27676 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T14:20:21.402+07:00  INFO 27676 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-29T14:20:21.404+07:00  INFO 27676 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-29T14:20:25.471+07:00  INFO 28116 --- [main] c.e.book_store.BookStoreApplication      : Starting BookStoreApplication using Java 17.0.6 with PID 28116 (C:\Users\Hugo Candraditya\Documents\Training MicroService\Springboot\book_store_with_logging\book_store\target\classes started by Hugo Candraditya in C:\Users\Hugo Candraditya\Documents\Training MicroService\Springboot\book_store_with_logging\book_store)
+2024-08-29T14:20:25.476+07:00  INFO 28116 --- [main] c.e.book_store.BookStoreApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T14:20:26.105+07:00  INFO 28116 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T14:20:26.165+07:00  INFO 28116 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interface.
+2024-08-29T14:20:26.798+07:00  INFO 28116 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-29T14:20:26.817+07:00  INFO 28116 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-29T14:20:26.818+07:00  INFO 28116 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-29T14:20:26.880+07:00  INFO 28116 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-29T14:20:26.880+07:00  INFO 28116 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1362 ms
+2024-08-29T14:20:26.910+07:00  INFO 28116 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-29T14:20:27.092+07:00  INFO 28116 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-29T14:20:27.094+07:00  INFO 28116 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-29T14:20:27.102+07:00  INFO 28116 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-29T14:20:27.333+07:00  INFO 28116 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T14:20:27.396+07:00  INFO 28116 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29T14:20:27.428+07:00  INFO 28116 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T14:20:27.672+07:00  INFO 28116 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T14:20:28.290+07:00  INFO 28116 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-29T14:20:28.309+07:00  INFO 28116 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T14:20:28.571+07:00  WARN 28116 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-29T14:20:28.677+07:00 DEBUG 28116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2024-08-29T14:20:28.778+07:00 DEBUG 28116 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-29T14:20:28.851+07:00 DEBUG 28116 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-29T14:20:28.897+07:00 DEBUG 28116 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-29T14:20:29.116+07:00  INFO 28116 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-29T14:20:29.128+07:00  INFO 28116 --- [main] c.e.book_store.BookStoreApplication      : Started BookStoreApplication in 4.016 seconds (process running for 4.32)
+2024-08-29T14:20:34.025+07:00  INFO 28116 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-29T14:20:34.026+07:00  INFO 28116 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-29T14:20:34.026+07:00 DEBUG 28116 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-08-29T14:20:34.026+07:00 DEBUG 28116 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-08-29T14:20:34.026+07:00 DEBUG 28116 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-08-29T14:20:34.027+07:00 DEBUG 28116 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@48cbe1c9
+2024-08-29T14:20:34.028+07:00 DEBUG 28116 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@3b17759c
+2024-08-29T14:20:34.028+07:00 DEBUG 28116 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-08-29T14:20:34.028+07:00  INFO 28116 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-08-29T14:20:34.037+07:00 DEBUG 28116 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/buku", parameters={}
+2024-08-29T14:20:34.047+07:00 DEBUG 28116 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.book_store.controller.BookController#getBook()
+2024-08-29T14:20:34.191+07:00 DEBUG 28116 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-29T14:20:34.192+07:00 DEBUG 28116 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[]]
+2024-08-29T14:20:34.202+07:00 DEBUG 28116 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-29T14:21:10.388+07:00  INFO 28116 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T14:21:10.391+07:00  INFO 28116 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-29T14:21:10.392+07:00  INFO 28116 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-29T14:21:14.297+07:00  INFO 9172 --- [main] c.e.book_store.BookStoreApplication      : Starting BookStoreApplication using Java 17.0.6 with PID 9172 (C:\Users\Hugo Candraditya\Documents\Training MicroService\Springboot\book_store_with_logging\book_store\target\classes started by Hugo Candraditya in C:\Users\Hugo Candraditya\Documents\Training MicroService\Springboot\book_store_with_logging\book_store)
+2024-08-29T14:21:14.303+07:00  INFO 9172 --- [main] c.e.book_store.BookStoreApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T14:21:14.960+07:00  INFO 9172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T14:21:15.025+07:00  INFO 9172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interface.
+2024-08-29T14:21:15.721+07:00  INFO 9172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-29T14:21:15.732+07:00  INFO 9172 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-29T14:21:15.732+07:00  INFO 9172 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-29T14:21:15.821+07:00  INFO 9172 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-29T14:21:15.821+07:00  INFO 9172 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1470 ms
+2024-08-29T14:21:15.857+07:00  INFO 9172 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-29T14:21:16.029+07:00  INFO 9172 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-29T14:21:16.031+07:00  INFO 9172 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-29T14:21:16.039+07:00  INFO 9172 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-29T14:21:16.258+07:00  INFO 9172 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T14:21:16.322+07:00  INFO 9172 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29T14:21:16.355+07:00  INFO 9172 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T14:21:16.727+07:00  INFO 9172 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T14:21:17.343+07:00  INFO 9172 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-29T14:21:17.366+07:00  INFO 9172 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T14:21:17.676+07:00  WARN 9172 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-29T14:21:17.790+07:00 DEBUG 9172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2024-08-29T14:21:17.899+07:00 DEBUG 9172 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-29T14:21:17.954+07:00 DEBUG 9172 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-29T14:21:18.000+07:00 DEBUG 9172 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-29T14:21:18.166+07:00  INFO 9172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-29T14:21:18.177+07:00  INFO 9172 --- [main] c.e.book_store.BookStoreApplication      : Started BookStoreApplication in 4.26 seconds (process running for 4.57)
+2024-08-29T14:21:18.720+07:00  INFO 9172 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-29T14:21:18.720+07:00  INFO 9172 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-29T14:21:18.721+07:00 DEBUG 9172 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-08-29T14:21:18.721+07:00 DEBUG 9172 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-08-29T14:21:18.721+07:00 DEBUG 9172 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-08-29T14:21:18.722+07:00 DEBUG 9172 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4a9f0360
+2024-08-29T14:21:18.723+07:00 DEBUG 9172 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@498f5728
+2024-08-29T14:21:18.723+07:00 DEBUG 9172 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-08-29T14:21:18.723+07:00  INFO 9172 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-08-29T14:21:18.731+07:00 DEBUG 9172 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/buku", parameters={}
+2024-08-29T14:21:18.739+07:00 DEBUG 9172 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.book_store.controller.BookController#getBook()
+2024-08-29T14:21:18.901+07:00  INFO 9172 --- [http-nio-8080-exec-1] c.e.book_store.aspect.LoggingAspect      : ResponseEntity com.example.book_store.controller.BookController.getBook() executed in 144ms
+2024-08-29T14:21:18.911+07:00 DEBUG 9172 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-29T14:21:18.912+07:00 DEBUG 9172 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[]]
+2024-08-29T14:21:18.922+07:00 DEBUG 9172 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-29T14:23:30.602+07:00  INFO 9172 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T14:23:30.605+07:00  INFO 9172 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-29T14:23:30.607+07:00  INFO 9172 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-29T14:23:33.446+07:00  INFO 26276 --- [main] c.e.book_store.BookStoreApplication      : Starting BookStoreApplication using Java 17.0.6 with PID 26276 (C:\Users\Hugo Candraditya\Documents\Training MicroService\Springboot\book_store_with_logging\book_store\target\classes started by Hugo Candraditya in C:\Users\Hugo Candraditya\Documents\Training MicroService\Springboot\book_store_with_logging\book_store)
+2024-08-29T14:23:33.450+07:00  INFO 26276 --- [main] c.e.book_store.BookStoreApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T14:23:34.032+07:00  INFO 26276 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T14:23:34.095+07:00  INFO 26276 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interface.
+2024-08-29T14:23:34.857+07:00  INFO 26276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-29T14:23:34.875+07:00  INFO 26276 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-29T14:23:34.875+07:00  INFO 26276 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-29T14:23:34.943+07:00  INFO 26276 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-29T14:23:34.944+07:00  INFO 26276 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1455 ms
+2024-08-29T14:23:34.982+07:00  INFO 26276 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-29T14:23:35.184+07:00  INFO 26276 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-29T14:23:35.185+07:00  INFO 26276 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-29T14:23:35.194+07:00  INFO 26276 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-29T14:23:35.475+07:00  INFO 26276 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T14:23:35.558+07:00  INFO 26276 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29T14:23:35.603+07:00  INFO 26276 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T14:23:36.001+07:00  INFO 26276 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T14:23:36.642+07:00  INFO 26276 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-29T14:23:36.665+07:00  INFO 26276 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T14:23:37.014+07:00  WARN 26276 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-29T14:23:37.158+07:00 DEBUG 26276 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2024-08-29T14:23:37.294+07:00 DEBUG 26276 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-29T14:23:37.372+07:00 DEBUG 26276 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-29T14:23:37.436+07:00 DEBUG 26276 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-29T14:23:37.655+07:00  INFO 26276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-29T14:23:37.668+07:00  INFO 26276 --- [main] c.e.book_store.BookStoreApplication      : Started BookStoreApplication in 4.588 seconds (process running for 4.885)
+2024-08-29T14:23:41.447+07:00  INFO 26276 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-29T14:23:41.448+07:00  INFO 26276 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-29T14:23:41.448+07:00 DEBUG 26276 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-08-29T14:23:41.448+07:00 DEBUG 26276 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-08-29T14:23:41.448+07:00 DEBUG 26276 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-08-29T14:23:41.449+07:00 DEBUG 26276 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6f12b637
+2024-08-29T14:23:41.449+07:00 DEBUG 26276 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@39451d92
+2024-08-29T14:23:41.450+07:00 DEBUG 26276 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-08-29T14:23:41.450+07:00  INFO 26276 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-08-29T14:23:41.458+07:00 DEBUG 26276 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/buku", parameters={}
+2024-08-29T14:23:41.464+07:00 DEBUG 26276 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.book_store.controller.BookController#getBook()
+2024-08-29T14:23:41.481+07:00  INFO 26276 --- [http-nio-8080-exec-2] c.e.book_store.aspect.LoggingAspect      : Lcom/example/book_store/controller/BookController;
+2024-08-29T14:23:41.598+07:00  INFO 26276 --- [http-nio-8080-exec-2] c.e.book_store.aspect.LoggingAspect      : ResponseEntity com.example.book_store.controller.BookController.getBook() executed in 117ms
+2024-08-29T14:23:41.607+07:00 DEBUG 26276 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-29T14:23:41.608+07:00 DEBUG 26276 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[]]
+2024-08-29T14:23:41.618+07:00 DEBUG 26276 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-29T14:24:58.115+07:00 DEBUG 26276 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2024-08-29T14:24:58.118+07:00 DEBUG 26276 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-08-29T14:24:58.119+07:00 DEBUG 26276 --- [http-nio-8080-exec-4] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-08-29T14:24:58.123+07:00 DEBUG 26276 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .]
+2024-08-29T14:24:58.123+07:00 DEBUG 26276 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-08-29T14:24:58.129+07:00 DEBUG 26276 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-08-29T14:24:58.131+07:00 DEBUG 26276 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2024-08-29T14:24:58.143+07:00 DEBUG 26276 --- [http-nio-8080-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2024-08-29T14:24:58.149+07:00 DEBUG 26276 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-08-29T14:28:54.169+07:00  INFO 26276 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T14:28:54.173+07:00  INFO 26276 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-29T14:28:54.175+07:00  INFO 26276 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-29T14:28:56.981+07:00  INFO 23776 --- [main] c.e.book_store.BookStoreApplication      : Starting BookStoreApplication using Java 17.0.6 with PID 23776 (C:\Users\Hugo Candraditya\Documents\Training MicroService\Springboot\book_store_with_logging\book_store\target\classes started by Hugo Candraditya in C:\Users\Hugo Candraditya\Documents\Training MicroService\Springboot\book_store_with_logging\book_store)
+2024-08-29T14:28:56.984+07:00  INFO 23776 --- [main] c.e.book_store.BookStoreApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T14:28:57.562+07:00  INFO 23776 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T14:28:57.615+07:00  INFO 23776 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interface.
+2024-08-29T14:28:58.278+07:00  INFO 23776 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-29T14:28:58.298+07:00  INFO 23776 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-29T14:28:58.298+07:00  INFO 23776 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-29T14:28:58.381+07:00  INFO 23776 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-29T14:28:58.382+07:00  INFO 23776 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1354 ms
+2024-08-29T14:28:58.414+07:00  INFO 23776 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-29T14:28:58.592+07:00  INFO 23776 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-29T14:28:58.594+07:00  INFO 23776 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-29T14:28:58.603+07:00  INFO 23776 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-29T14:28:58.920+07:00  INFO 23776 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T14:28:58.996+07:00  INFO 23776 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29T14:28:59.025+07:00  INFO 23776 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T14:28:59.382+07:00  INFO 23776 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T14:29:00.022+07:00  INFO 23776 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-29T14:29:00.050+07:00  INFO 23776 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T14:29:00.283+07:00  WARN 23776 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-29T14:29:00.364+07:00 DEBUG 23776 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2024-08-29T14:29:00.470+07:00 DEBUG 23776 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-29T14:29:00.537+07:00 DEBUG 23776 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-29T14:29:00.579+07:00 DEBUG 23776 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-29T14:29:00.698+07:00  INFO 23776 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-29T14:29:00.710+07:00  INFO 23776 --- [main] c.e.book_store.BookStoreApplication      : Started BookStoreApplication in 4.069 seconds (process running for 4.342)
+2024-08-29T14:29:28.840+07:00  INFO 23776 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-29T14:29:28.840+07:00  INFO 23776 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-29T14:29:28.840+07:00 DEBUG 23776 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-08-29T14:29:28.840+07:00 DEBUG 23776 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-08-29T14:29:28.840+07:00 DEBUG 23776 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-08-29T14:29:28.841+07:00 DEBUG 23776 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6075a4ea
+2024-08-29T14:29:28.841+07:00 DEBUG 23776 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@32f45e15
+2024-08-29T14:29:28.841+07:00 DEBUG 23776 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-08-29T14:29:28.841+07:00  INFO 23776 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-29T14:29:28.847+07:00 DEBUG 23776 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/buku", parameters={}
+2024-08-29T14:29:28.853+07:00 DEBUG 23776 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.book_store.controller.BookController#getBook()
+2024-08-29T14:29:28.985+07:00 DEBUG 23776 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-29T14:29:28.986+07:00 DEBUG 23776 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[]]
+2024-08-29T14:29:28.996+07:00 DEBUG 23776 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-29T14:32:55.517+07:00  INFO 23776 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T14:32:55.520+07:00  INFO 23776 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-29T14:32:55.522+07:00  INFO 23776 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-29T14:32:59.260+07:00  INFO 19516 --- [main] c.e.book_store.BookStoreApplication      : Starting BookStoreApplication using Java 17.0.6 with PID 19516 (C:\Users\Hugo Candraditya\Documents\Training MicroService\Springboot\book_store_with_logging\book_store\target\classes started by Hugo Candraditya in C:\Users\Hugo Candraditya\Documents\Training MicroService\Springboot\book_store_with_logging\book_store)
+2024-08-29T14:32:59.265+07:00  INFO 19516 --- [main] c.e.book_store.BookStoreApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T14:32:59.917+07:00  INFO 19516 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T14:32:59.982+07:00  INFO 19516 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interface.
+2024-08-29T14:33:00.674+07:00  INFO 19516 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-29T14:33:00.688+07:00  INFO 19516 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-29T14:33:00.688+07:00  INFO 19516 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-29T14:33:00.757+07:00  INFO 19516 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-29T14:33:00.758+07:00  INFO 19516 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1444 ms
+2024-08-29T14:33:00.795+07:00  INFO 19516 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-29T14:33:00.974+07:00  INFO 19516 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-29T14:33:00.976+07:00  INFO 19516 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-29T14:33:00.984+07:00  INFO 19516 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-29T14:33:01.186+07:00  INFO 19516 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T14:33:01.252+07:00  INFO 19516 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29T14:33:01.286+07:00  INFO 19516 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T14:33:01.616+07:00  INFO 19516 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T14:33:02.178+07:00  INFO 19516 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-29T14:33:02.198+07:00  INFO 19516 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T14:33:02.521+07:00  WARN 19516 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-29T14:33:02.991+07:00  INFO 19516 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-29T14:33:03.001+07:00  INFO 19516 --- [main] c.e.book_store.BookStoreApplication      : Started BookStoreApplication in 4.094 seconds (process running for 4.367)
+2024-08-29T14:33:06.348+07:00  INFO 19516 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-29T14:33:06.348+07:00  INFO 19516 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-29T14:33:06.349+07:00  INFO 19516 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-29T14:33:06.503+07:00  INFO 19516 --- [http-nio-8080-exec-2] c.e.book_store.aspect.LoggingAspect      : ResponseEntity com.example.book_store.controller.BookController.getBook() executed in 115ms
+2024-08-29T14:33:06.503+07:00  INFO 19516 --- [http-nio-8080-exec-2] c.e.book_store.aspect.LoggingAspect      : Request: GET /api/buku - Parameters: org.apache.catalina.util.ParameterMap@278bbfd4
+2024-08-29T14:33:06.505+07:00  INFO 19516 --- [http-nio-8080-exec-2] c.e.book_store.aspect.LoggingAspect      : Response: Status 200 OK - Body: []
+2024-08-29T14:35:54.810+07:00  INFO 19516 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T14:35:54.813+07:00  INFO 19516 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-29T14:35:54.815+07:00  INFO 19516 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-29T14:35:57.850+07:00  INFO 7800 --- [main] c.e.book_store.BookStoreApplication      : Starting BookStoreApplication using Java 17.0.6 with PID 7800 (C:\Users\Hugo Candraditya\Documents\Training MicroService\Springboot\book_store_with_logging\book_store\target\classes started by Hugo Candraditya in C:\Users\Hugo Candraditya\Documents\Training MicroService\Springboot\book_store_with_logging\book_store)
+2024-08-29T14:35:57.852+07:00  INFO 7800 --- [main] c.e.book_store.BookStoreApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T14:35:58.472+07:00  INFO 7800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T14:35:58.520+07:00  INFO 7800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interface.
+2024-08-29T14:35:59.154+07:00  INFO 7800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-29T14:35:59.166+07:00  INFO 7800 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-29T14:35:59.167+07:00  INFO 7800 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-29T14:35:59.234+07:00  INFO 7800 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-29T14:35:59.234+07:00  INFO 7800 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1340 ms
+2024-08-29T14:35:59.272+07:00  INFO 7800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-29T14:35:59.404+07:00  INFO 7800 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-29T14:35:59.406+07:00  INFO 7800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-29T14:35:59.414+07:00  INFO 7800 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-29T14:35:59.599+07:00  INFO 7800 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T14:35:59.670+07:00  INFO 7800 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29T14:35:59.708+07:00  INFO 7800 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T14:36:00.077+07:00  INFO 7800 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T14:36:00.686+07:00  INFO 7800 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-29T14:36:00.707+07:00  INFO 7800 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T14:36:00.960+07:00  WARN 7800 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-29T14:36:01.410+07:00  INFO 7800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-29T14:36:01.423+07:00  INFO 7800 --- [main] c.e.book_store.BookStoreApplication      : Started BookStoreApplication in 3.943 seconds (process running for 4.221)
+2024-08-29T14:36:08.146+07:00  INFO 7800 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-29T14:36:08.146+07:00  INFO 7800 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-29T14:36:08.147+07:00  INFO 7800 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-29T14:36:08.186+07:00  INFO 7800 --- [http-nio-8080-exec-2] c.e.book_store.aspect.LoggingAspect      : Request: GET /api/buku - Parameters: org.apache.catalina.util.ParameterMap@a0def5
+2024-08-29T14:36:08.299+07:00  INFO 7800 --- [http-nio-8080-exec-2] c.e.book_store.aspect.LoggingAspect      : Response: Status 200 OK - Body: [] executed in 112 ms
+2024-08-29T14:36:23.998+07:00  INFO 7800 --- [http-nio-8080-exec-3] c.e.book_store.aspect.LoggingAspect      : Request: GET /api/buku/1 - Parameters: org.apache.catalina.util.ParameterMap@5bf425c5
+2024-08-29T14:36:24.005+07:00 ERROR 7800 --- [http-nio-8080-exec-3] c.e.book_store.aspect.LoggingAspect      : Response: Status 404 NOT_FOUND - Body: null executed in 7 ms
+2024-08-29T14:36:45.393+07:00  INFO 7800 --- [http-nio-8080-exec-4] c.e.book_store.aspect.LoggingAspect      : Request: POST /api/buku - Parameters: org.apache.catalina.util.ParameterMap@6a79cc50
+2024-08-29T14:36:45.394+07:00 ERROR 7800 --- [http-nio-8080-exec-4] c.e.book_store.aspect.LoggingAspect      : Response: Status 400 BAD_REQUEST - Body: null executed in 1 ms
+2024-08-29T14:37:56.863+07:00  INFO 7800 --- [http-nio-8080-exec-6] c.e.book_store.aspect.LoggingAspect      : Request: POST /api/buku - Parameters: org.apache.catalina.util.ParameterMap@3e6ac410
+2024-08-29T14:37:56.893+07:00  INFO 7800 --- [http-nio-8080-exec-6] c.e.book_store.aspect.LoggingAspect      : Response: Status 200 OK - Body: null executed in 28 ms
+2024-08-29T14:38:38.652+07:00  INFO 7800 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T14:38:38.655+07:00  INFO 7800 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-29T14:38:38.656+07:00  INFO 7800 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-29T14:38:42.450+07:00  INFO 23224 --- [main] c.e.book_store.BookStoreApplication      : Starting BookStoreApplication using Java 17.0.6 with PID 23224 (C:\Users\Hugo Candraditya\Documents\Training MicroService\Springboot\book_store_with_logging\book_store\target\classes started by Hugo Candraditya in C:\Users\Hugo Candraditya\Documents\Training MicroService\Springboot\book_store_with_logging\book_store)
+2024-08-29T14:38:42.453+07:00  INFO 23224 --- [main] c.e.book_store.BookStoreApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T14:38:43.049+07:00  INFO 23224 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T14:38:43.105+07:00  INFO 23224 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interface.
+2024-08-29T14:38:43.804+07:00  INFO 23224 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-29T14:38:43.819+07:00  INFO 23224 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-29T14:38:43.820+07:00  INFO 23224 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-29T14:38:43.886+07:00  INFO 23224 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-29T14:38:43.886+07:00  INFO 23224 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1390 ms
+2024-08-29T14:38:43.923+07:00  INFO 23224 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-29T14:38:44.106+07:00  INFO 23224 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-29T14:38:44.108+07:00  INFO 23224 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-29T14:38:44.115+07:00  INFO 23224 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-29T14:38:44.381+07:00  INFO 23224 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T14:38:44.489+07:00  INFO 23224 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29T14:38:44.529+07:00  INFO 23224 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T14:38:44.886+07:00  INFO 23224 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T14:38:45.452+07:00  INFO 23224 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-29T14:38:45.472+07:00  INFO 23224 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T14:38:45.769+07:00  WARN 23224 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-29T14:38:46.203+07:00  INFO 23224 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-29T14:38:46.214+07:00  INFO 23224 --- [main] c.e.book_store.BookStoreApplication      : Started BookStoreApplication in 4.115 seconds (process running for 4.393)
+2024-08-29T14:38:49.177+07:00  INFO 23224 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-29T14:38:49.177+07:00  INFO 23224 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-29T14:38:49.178+07:00  INFO 23224 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-29T14:38:49.280+07:00  INFO 23224 --- [http-nio-8080-exec-2] c.e.book_store.aspect.LoggingAspect      : Request: POST /api/buku - Parameters: org.apache.catalina.util.ParameterMap@5dae16ab
+2024-08-29T14:38:49.362+07:00  INFO 23224 --- [http-nio-8080-exec-2] c.e.book_store.aspect.LoggingAspect      : Response: Status 200 OK - Body: null executed in 81 ms
+2024-08-29T14:46:17.726+07:00  WARN 23224 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m33s406ms559µs700ns).
+2024-08-29T14:47:26.463+07:00  INFO 23224 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T14:47:26.465+07:00  INFO 23224 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-29T14:47:26.468+07:00  INFO 23224 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-29T14:47:30.676+07:00  INFO 12920 --- [main] c.e.book_store.BookStoreApplication      : Starting BookStoreApplication using Java 17.0.6 with PID 12920 (C:\Users\Hugo Candraditya\Documents\Training MicroService\Springboot\book_store_with_logging\book_store\target\classes started by Hugo Candraditya in C:\Users\Hugo Candraditya\Documents\Training MicroService\Springboot\book_store_with_logging\book_store)
+2024-08-29T14:47:30.678+07:00  INFO 12920 --- [main] c.e.book_store.BookStoreApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T14:47:31.476+07:00  INFO 12920 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T14:47:31.539+07:00  INFO 12920 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interface.
+2024-08-29T14:47:32.324+07:00  INFO 12920 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-29T14:47:32.348+07:00  INFO 12920 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-29T14:47:32.349+07:00  INFO 12920 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-29T14:47:32.426+07:00  INFO 12920 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-29T14:47:32.427+07:00  INFO 12920 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1706 ms
+2024-08-29T14:47:32.625+07:00  INFO 12920 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-29T14:47:32.814+07:00  INFO 12920 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-29T14:47:32.817+07:00  INFO 12920 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-29T14:47:32.826+07:00  INFO 12920 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-29T14:47:33.258+07:00  INFO 12920 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T14:47:33.400+07:00  INFO 12920 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29T14:47:33.430+07:00  INFO 12920 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T14:47:33.843+07:00  INFO 12920 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T14:47:34.393+07:00  INFO 12920 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-29T14:47:34.412+07:00  INFO 12920 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T14:47:34.821+07:00  WARN 12920 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-29T14:47:35.717+07:00  INFO 12920 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-08-29T14:47:35.821+07:00  INFO 12920 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-29T14:47:35.832+07:00  INFO 12920 --- [main] c.e.book_store.BookStoreApplication      : Started BookStoreApplication in 5.501 seconds (process running for 5.792)
+2024-08-29T14:47:47.237+07:00  INFO 12920 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-29T14:47:47.237+07:00  INFO 12920 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-29T14:47:47.237+07:00  INFO 12920 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-08-29T14:49:12.625+07:00  INFO 12920 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T14:49:12.628+07:00  INFO 12920 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-29T14:49:12.631+07:00  INFO 12920 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-29T14:49:14.525+07:00  INFO 25076 --- [main] c.e.book_store.BookStoreApplication      : Starting BookStoreApplication using Java 17.0.6 with PID 25076 (C:\Users\Hugo Candraditya\Documents\Training MicroService\Springboot\book_store_with_logging\book_store\target\classes started by Hugo Candraditya in C:\Users\Hugo Candraditya\Documents\Training MicroService\Springboot\book_store_with_logging\book_store)
+2024-08-29T14:49:14.527+07:00  INFO 25076 --- [main] c.e.book_store.BookStoreApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T14:49:15.449+07:00  INFO 25076 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T14:49:15.529+07:00  INFO 25076 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 1 JPA repository interface.
+2024-08-29T14:49:16.401+07:00  INFO 25076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-29T14:49:16.423+07:00  INFO 25076 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-29T14:49:16.423+07:00  INFO 25076 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-29T14:49:16.501+07:00  INFO 25076 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-29T14:49:16.502+07:00  INFO 25076 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1926 ms
+2024-08-29T14:49:16.688+07:00  INFO 25076 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-29T14:49:16.903+07:00  INFO 25076 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-29T14:49:16.906+07:00  INFO 25076 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-29T14:49:16.922+07:00  INFO 25076 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-29T14:49:17.355+07:00  INFO 25076 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T14:49:17.467+07:00  INFO 25076 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29T14:49:17.554+07:00  INFO 25076 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T14:49:18.028+07:00  INFO 25076 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T14:49:18.609+07:00  INFO 25076 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-29T14:49:18.629+07:00  INFO 25076 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T14:49:19.121+07:00  WARN 25076 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-29T14:49:20.338+07:00  INFO 25076 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2024-08-29T14:49:20.449+07:00  INFO 25076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-29T14:49:20.459+07:00  INFO 25076 --- [main] c.e.book_store.BookStoreApplication      : Started BookStoreApplication in 6.317 seconds (process running for 6.622)
+2024-08-29T14:49:21.256+07:00  INFO 25076 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-29T14:49:21.256+07:00  INFO 25076 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-29T14:49:21.257+07:00  INFO 25076 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-29T14:52:45.120+07:00  INFO 25076 --- [http-nio-8080-exec-7] c.e.book_store.aspect.LoggingAspect      : Request: GET /api/buku - Parameters: org.apache.catalina.util.ParameterMap@33522992
+2024-08-29T14:52:45.239+07:00  INFO 25076 --- [http-nio-8080-exec-7] c.e.book_store.aspect.LoggingAspect      : Response: Status 200 OK - Body: [] executed in 118 ms
+2024-08-29T14:52:55.941+07:00  INFO 25076 --- [http-nio-8080-exec-9] c.e.book_store.aspect.LoggingAspect      : Request: POST /api/buku - Parameters: org.apache.catalina.util.ParameterMap@1f584a67
+2024-08-29T14:52:55.973+07:00  INFO 25076 --- [http-nio-8080-exec-9] c.e.book_store.aspect.LoggingAspect      : Response: Status 200 OK - Body: null executed in 31 ms
+2024-08-29T14:54:43.023+07:00  INFO 25076 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T14:54:43.026+07:00  INFO 25076 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-29T14:54:43.029+07:00  INFO 25076 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-29T14:54:45.783+07:00  INFO 14244 --- [main] c.e.book_store.BookStoreApplication      : Starting BookStoreApplication using Java 17.0.6 with PID 14244 (C:\Users\Hugo Candraditya\Documents\Training MicroService\Springboot\book_store_with_logging\book_store\target\classes started by Hugo Candraditya in C:\Users\Hugo Candraditya\Documents\Training MicroService\Springboot\book_store_with_logging\book_store)
+2024-08-29T14:54:45.786+07:00  INFO 14244 --- [main] c.e.book_store.BookStoreApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T14:54:46.640+07:00  INFO 14244 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T14:54:46.719+07:00  INFO 14244 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interface.
+2024-08-29T14:54:47.529+07:00  INFO 14244 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-29T14:54:47.547+07:00  INFO 14244 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-29T14:54:47.548+07:00  INFO 14244 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-29T14:54:47.607+07:00  INFO 14244 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-29T14:54:47.608+07:00  INFO 14244 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1781 ms
+2024-08-29T14:54:47.792+07:00  INFO 14244 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-29T14:54:48.005+07:00  INFO 14244 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-29T14:54:48.008+07:00  INFO 14244 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-29T14:54:48.019+07:00  INFO 14244 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-29T14:54:48.419+07:00  INFO 14244 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T14:54:48.554+07:00  INFO 14244 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29T14:54:48.583+07:00  INFO 14244 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T14:54:48.911+07:00  INFO 14244 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T14:54:49.457+07:00  INFO 14244 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-29T14:54:49.475+07:00  INFO 14244 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T14:54:49.880+07:00  WARN 14244 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-29T14:54:50.946+07:00  INFO 14244 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2024-08-29T14:54:51.062+07:00  INFO 14244 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-29T14:54:51.074+07:00  INFO 14244 --- [main] c.e.book_store.BookStoreApplication      : Started BookStoreApplication in 5.621 seconds (process running for 5.891)
+2024-08-29T14:57:18.896+07:00  INFO 14244 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-29T14:57:18.897+07:00  INFO 14244 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-29T14:57:18.898+07:00  INFO 14244 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-29T14:57:18.980+07:00 ERROR 14244 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: getInputStream() has already been called for this request] with root cause
+
+java.lang.IllegalStateException: getInputStream() has already been called for this request
+	at org.apache.catalina.connector.Request.getReader(Request.java:1134) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.connector.RequestFacade.getReader(RequestFacade.java:392) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at com.example.book_store.aspect.LoggingAspect.logExecutionTime(LoggingAspect.java:24) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:627) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720) ~[spring-aop-6.1.12.jar:6.1.12]
+	at com.example.book_store.controller.BookController$$SpringCGLIB$$0.createBook(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2024-08-29T14:57:42.475+07:00  INFO 14244 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T14:57:42.479+07:00  INFO 14244 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-29T14:57:42.481+07:00  INFO 14244 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-29T14:57:46.142+07:00  INFO 25028 --- [main] c.e.book_store.BookStoreApplication      : Starting BookStoreApplication using Java 17.0.6 with PID 25028 (C:\Users\Hugo Candraditya\Documents\Training MicroService\Springboot\book_store_with_logging\book_store\target\classes started by Hugo Candraditya in C:\Users\Hugo Candraditya\Documents\Training MicroService\Springboot\book_store_with_logging\book_store)
+2024-08-29T14:57:46.147+07:00  INFO 25028 --- [main] c.e.book_store.BookStoreApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T14:57:46.977+07:00  INFO 25028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T14:57:47.051+07:00  INFO 25028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 1 JPA repository interface.
+2024-08-29T14:57:47.800+07:00  INFO 25028 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-29T14:57:47.812+07:00  INFO 25028 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-29T14:57:47.812+07:00  INFO 25028 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-29T14:57:47.877+07:00  INFO 25028 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-29T14:57:47.877+07:00  INFO 25028 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1684 ms
+2024-08-29T14:57:48.043+07:00  INFO 25028 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-29T14:57:48.264+07:00  INFO 25028 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-29T14:57:48.266+07:00  INFO 25028 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-29T14:57:48.278+07:00  INFO 25028 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-29T14:57:48.708+07:00  INFO 25028 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T14:57:48.864+07:00  INFO 25028 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29T14:57:48.934+07:00  INFO 25028 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T14:57:49.347+07:00  INFO 25028 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T14:57:49.904+07:00  INFO 25028 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-29T14:57:49.922+07:00  INFO 25028 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T14:57:50.352+07:00  WARN 25028 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-29T14:57:51.493+07:00  INFO 25028 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2024-08-29T14:57:51.616+07:00  INFO 25028 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-29T14:57:51.626+07:00  INFO 25028 --- [main] c.e.book_store.BookStoreApplication      : Started BookStoreApplication in 5.827 seconds (process running for 6.097)
+2024-08-29T14:57:55.500+07:00  INFO 25028 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-29T14:57:55.501+07:00  INFO 25028 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-29T14:57:55.503+07:00  INFO 25028 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-29T14:57:55.585+07:00  INFO 25028 --- [http-nio-8080-exec-1] c.e.book_store.aspect.LoggingAspect      : Request: POST /api/buku - Input: org.apache.catalina.connector.CoyoteInputStream@29314749
+2024-08-29T14:57:55.654+07:00  INFO 25028 --- [http-nio-8080-exec-1] c.e.book_store.aspect.LoggingAspect      : Response: Status 200 OK - Body: null executed in 68 ms
+2024-08-29T15:06:32.192+07:00  INFO 25028 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T15:06:32.195+07:00  INFO 25028 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-29T15:06:32.198+07:00  INFO 25028 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-29T15:06:35.126+07:00  INFO 29308 --- [main] c.e.book_store.BookStoreApplication      : Starting BookStoreApplication using Java 17.0.6 with PID 29308 (C:\Users\Hugo Candraditya\Documents\Training MicroService\Springboot\book_store_with_logging\book_store\target\classes started by Hugo Candraditya in C:\Users\Hugo Candraditya\Documents\Training MicroService\Springboot\book_store_with_logging\book_store)
+2024-08-29T15:06:35.134+07:00  INFO 29308 --- [main] c.e.book_store.BookStoreApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T15:06:36.045+07:00  INFO 29308 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T15:06:36.131+07:00  INFO 29308 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75 ms. Found 1 JPA repository interface.
+2024-08-29T15:06:37.000+07:00  INFO 29308 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-29T15:06:37.023+07:00  INFO 29308 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-29T15:06:37.023+07:00  INFO 29308 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-29T15:06:37.102+07:00  INFO 29308 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-29T15:06:37.102+07:00  INFO 29308 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1928 ms
+2024-08-29T15:06:37.282+07:00  INFO 29308 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-29T15:06:37.556+07:00  INFO 29308 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-29T15:06:37.561+07:00  INFO 29308 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-29T15:06:37.576+07:00  INFO 29308 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-29T15:06:37.916+07:00  INFO 29308 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T15:06:38.051+07:00  INFO 29308 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29T15:06:38.104+07:00  INFO 29308 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T15:06:38.551+07:00  INFO 29308 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T15:06:39.124+07:00  INFO 29308 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-29T15:06:39.142+07:00  INFO 29308 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T15:06:39.523+07:00  WARN 29308 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-29T15:06:40.505+07:00  INFO 29308 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2024-08-29T15:06:40.622+07:00  INFO 29308 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-29T15:06:40.633+07:00  INFO 29308 --- [main] c.e.book_store.BookStoreApplication      : Started BookStoreApplication in 5.868 seconds (process running for 6.16)
+2024-08-29T15:07:05.758+07:00  INFO 29308 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-29T15:07:05.758+07:00  INFO 29308 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-29T15:07:05.760+07:00  INFO 29308 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-29T15:08:48.927+07:00  INFO 29308 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T15:08:48.931+07:00  INFO 29308 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-29T15:08:48.933+07:00  INFO 29308 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-29T15:08:50.683+07:00  INFO 27980 --- [main] c.e.book_store.BookStoreApplication      : Starting BookStoreApplication using Java 17.0.6 with PID 27980 (C:\Users\Hugo Candraditya\Documents\Training MicroService\Springboot\book_store_with_logging\book_store\target\classes started by Hugo Candraditya in C:\Users\Hugo Candraditya\Documents\Training MicroService\Springboot\book_store_with_logging\book_store)
+2024-08-29T15:08:50.686+07:00  INFO 27980 --- [main] c.e.book_store.BookStoreApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-08-29T15:08:51.493+07:00  INFO 27980 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-29T15:08:51.565+07:00  INFO 27980 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 1 JPA repository interface.
+2024-08-29T15:08:52.423+07:00  INFO 27980 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-29T15:08:52.442+07:00  INFO 27980 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-29T15:08:52.443+07:00  INFO 27980 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-29T15:08:52.519+07:00  INFO 27980 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-29T15:08:52.520+07:00  INFO 27980 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1791 ms
+2024-08-29T15:08:52.733+07:00  INFO 27980 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-29T15:08:52.961+07:00  INFO 27980 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-29T15:08:52.965+07:00  INFO 27980 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-29T15:08:52.979+07:00  INFO 27980 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-29T15:08:53.417+07:00  INFO 27980 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-29T15:08:53.532+07:00  INFO 27980 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-29T15:08:53.565+07:00  INFO 27980 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-29T15:08:54.030+07:00  INFO 27980 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-29T15:08:54.597+07:00  INFO 27980 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-29T15:08:54.616+07:00  INFO 27980 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-29T15:08:55.130+07:00  WARN 27980 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-29T15:08:56.095+07:00  INFO 27980 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2024-08-29T15:08:56.210+07:00  INFO 27980 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-29T15:08:56.219+07:00  INFO 27980 --- [main] c.e.book_store.BookStoreApplication      : Started BookStoreApplication in 5.875 seconds (process running for 6.161)
+2024-08-29T15:09:34.455+07:00  INFO 27980 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-29T15:09:34.455+07:00  INFO 27980 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-29T15:09:34.456+07:00  INFO 27980 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

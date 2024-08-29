@@ -7,10 +7,12 @@ import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @Table(name = "BOOK")
 @Entity
 @Data
+@ToString
 public class BookModel {
     @Id
     @Column

@@ -1,5 +1,6 @@
 package com.example.book_store.controller;
 
+import com.example.book_store.aspect.LogData;
 import com.example.book_store.model.BookModel;
 import com.example.book_store.service.BookService;
 import lombok.RequiredArgsConstructor;
@@ -18,6 +19,7 @@ public class BookController {
 
     private final BookService bookService;
 
+    @LogData
     @GetMapping("/buku")
     public ResponseEntity getBook() {
         List<BookModel> books = bookService.getAllBooks();
@@ -25,6 +27,7 @@ public class BookController {
         return new ResponseEntity<>(books, HttpStatus.OK);
     }
 
+    @LogData
     @GetMapping("/buku/{id}")
     public ResponseEntity getBook(@PathVariable("id") Long id) {
         Optional<BookModel> bookOpt = bookService.getBookById(id);
@@ -32,6 +35,7 @@ public class BookController {
         return bookOpt.map(bookModel -> new ResponseEntity<>(bookModel, HttpStatus.OK)).orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
 
+    @LogData
     @PostMapping("/buku")
     public ResponseEntity createBook(@RequestBody BookModel book) {
         if(bookService.validateInput(book))
@@ -40,6 +44,7 @@ public class BookController {
         return new ResponseEntity(HttpStatus.OK);
     }
 
+    @LogData
     @PutMapping("/buku/{id}")
     public ResponseEntity editBook(@PathVariable("id") Long id,
                                    @RequestBody BookModel book) {
@@ -56,6 +61,7 @@ public class BookController {
 
     }
 
+    @LogData
     @DeleteMapping("/buku/{id}")
     public ResponseEntity delete(@PathVariable("id") Long id) {
 
